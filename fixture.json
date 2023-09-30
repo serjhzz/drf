@@ -1,0 +1,104 @@
+[
+  {
+    "model": "academy.Course",
+    "pk": 1,
+    "fields": {
+      "name": "Course 1",
+      "preview": null,
+      "description": "Description for Course 1",
+      "creator": 1
+    }
+  },
+  {
+    "model": "academy.Course",
+    "pk": 2,
+    "fields": {
+      "name": "Course 2",
+      "preview": null,
+      "description": "Description for Course 2",
+      "creator": 2
+    }
+  },
+  {
+    "model": "academy.Course",
+    "pk": 3,
+    "fields": {
+      "name": "Course 3",
+      "preview": null,
+      "description": "Description for Course 3",
+      "creator": 3
+    }
+  },
+  {
+    "model": "academy.Lesson",
+    "pk": 1,
+    "fields": {
+      "name": "Lesson 1",
+      "preview": null,
+      "description": "Description for Lesson 1",
+      "video_link": "https://example.com/lesson1-video",
+      "course": 1,
+      "creator": 1
+    }
+  },
+  {
+    "model": "academy.Lesson",
+    "pk": 2,
+    "fields": {
+      "name": "Lesson 2",
+      "preview": null,
+      "description": "Description for Lesson 2",
+      "video_link": "https://example.com/lesson2-video",
+      "course": 2,
+      "creator": 2
+    }
+  },
+  {
+    "model": "academy.Lesson",
+    "pk": 3,
+    "fields": {
+      "name": "Lesson 3",
+      "preview": null,
+      "description": "Description for Lesson 3",
+      "video_link": "https://example.com/lesson3-video",
+      "course": 3,
+      "creator": 3
+    }
+  },
+  {
+    "model": "payments.Payment",
+    "pk": 1,
+    "fields": {
+      "creator": 2,
+      "course_payment": 1,
+      "lesson_payment": null,
+      "amount": 10000,
+      "method_payment": "card_transfer",
+      "datetime_payment": "2023-12-13T12:00:00Z"
+    }
+  },
+  {
+    "model": "payments.Payment",
+    "pk": 2,
+    "fields": {
+      "creator": 2,
+      "course_payment": null,
+      "lesson_payment": 1,
+      "amount": 20000,
+      "method_payment": "cash",
+      "datetime_payment": "2023-09-13T12:00:00Z"
+    }
+  },
+  {
+    "model": "payments.Payment",
+    "pk": 3,
+    "fields": {
+      "creator": 2,
+      "course_payment": null,
+      "lesson_payment": 2,
+      "amount": 30000,
+      "method_payment": "cash",
+      "datetime_payment": "2023-10-13T12:00:00Z"
+    }
+  }
+]
